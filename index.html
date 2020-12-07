@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans';
+      background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+      background-position: -150px -400px, 700px 350px;
+      background-size: 800px 800px, 800px 800px;
+      background-repeat: no-repeat;
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    .img1 {
+      border-radius: 100%;
+      width: 0.5;
+      border: solid 4px white;
+      position: relative;
+      top: 80px;
+    }
+    .card {
+      position: relative;
+      top: 150px;
+      text-align: center;
+      height: 350px;
+      width: 320px;
+      margin: auto;
+      background: url("images/bg-pattern-card.svg");
+      background-color: #fff;
+      background-size: 320px 130px;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+    }
+    .name {
+      position: relative;
+      top: 100px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .age {
+      font-weight: 400;
+      position: relative;
+      top: 100px;
+      color: hsl(0, 0%, 59%);
+    }
+    .place {
+      position: relative;
+      top: 105px;
+      font-size: 18px;
+      color: hsl(0, 0%, 59%);
+      font-weight: 400;
+    }
+    hr {
+      position: relative;
+      top: 115px;
+      height: 1px;
+    }
+    .bio {
+      font-weight: 700;
+      font-size: 18px;
+      font-family: 'Kumbh Sans';
+      font-weight: 700;
+      position: relative;
+      top: 125px;
+      right: 20px;
+      display: inline-block;
+      padding-left: 30px;
+    }
+    .bio p {
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+      font-family: 'Kumbh Sans';
+      font-size: 10px;
+      color: hsl(0, 0%, 59%);
+    }
+    @media (max-width: 480px) {
+      body {
+        background-position: -275px -275px, 150px 400px;
+        background-size: 500px 500px, 500px 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+  <img class="img1" src ="images/image-victor.jpg" />
+  <br />
+  <span class="name">Victor Crest</span>&nbsp;&nbsp;
+  <span class="age">26</span>
+  <br />
+  <span class="place">London</span>
+  <hr />
+  <span class="bio">
+  80K
+  <br />
+  <p>Followers</p>
+  </span>
+  <span class="bio">
+  803K
+  <br />
+  <p>Likes</p>
+  </span>
+  <span class="bio">
+  1.4K
+  <br />
+  <p>Photos</p>
+  </span>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
